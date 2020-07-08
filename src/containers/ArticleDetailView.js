@@ -11,7 +11,7 @@ class ArticleDetail extends React.Component {
 
     componentDidMount() {
         const articleID = this.props.match.params.articleID;
-        axios.get(`http://django-back-env.eba-rvtzrcn7.us-west-2.elasticbeanstalk.com/${articleID}`)
+        axios.get(`https://django-back-env.eba-rvtzrcn7.us-west-2.elasticbeanstalk.com/${articleID}`)
             .then(res => {
                 this.setState({
                     article: res.data
