@@ -10,7 +10,7 @@ class ArticleList extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('http://django-back-env.eba-rvtzrcn7.us-west-2.elasticbeanstalk.com')
+        axios.get('https://django-back-test.de')
             .then(res => {
                 this.setState({
                     articles: res.data
